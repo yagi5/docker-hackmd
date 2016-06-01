@@ -21,6 +21,7 @@ RUN bower install --allow-root
 
 # add config
 ADD config.json /hackmd/config.json
+ADD .sequelizerc /hackmd/.sequelizerc
 ADD docker-entrypoint.sh /hackmd/docker-entrypoint.sh
 
 EXPOSE 3000

@@ -15,14 +15,14 @@ RUN git checkout -b v0.4.6
 # npm, deps
 RUN npm install
 
-# build front-end bundle
-RUN npm run build:prod
-
 # add config
 ADD config.js /hackmd/public/js/config.js
 ADD config.json /hackmd/config.json
 ADD .sequelizerc /hackmd/.sequelizerc
 ADD docker-entrypoint.sh /hackmd/docker-entrypoint.sh
+
+# build front-end bundle
+RUN npm run build:prod
 
 EXPOSE 3000
 

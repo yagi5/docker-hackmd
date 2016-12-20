@@ -1,4 +1,4 @@
-hackmdPostgres:
+hackmdpostgres:
   image: postgres
   environment:
     - POSTGRES_USER=hackmd
@@ -10,6 +10,6 @@ hackmd:
     - POSTGRES_USER=hackmd
     - POSTGRES_PASSWORD=hackmdpass
   links:
-    - hackmdPostgres
+    - hackmdpostgres
   ports:
     - "3000:3000"

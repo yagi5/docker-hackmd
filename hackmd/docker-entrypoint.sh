@@ -1,7 +1,6 @@
 #!/bin/sh
 
-if [ -f .sequelizerc ];
-then
+if [ -f .sequelizerc ]; then
     node_modules/.bin/sequelize db:migrate
 fi
 
@@ -9,4 +8,5 @@ fi
 sleep 3
 
 # run
-NODE_ENV='production' node app.js
+export NODE_ENV=production
+exec node app.js

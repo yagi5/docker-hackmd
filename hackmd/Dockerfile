@@ -25,7 +25,7 @@ RUN apk add --no-cache build-base alpine-sdk python git && \
     adduser -u 10000 -h /hackmd/ -D -S hackmd && \
     chown -R hackmd /hackmd/
 
-ADD docker-entrypoint.sh /hackmd/docker-entrypoint.sh
+ADD docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
 WORKDIR /hackmd
 
@@ -33,4 +33,4 @@ EXPOSE 3000
 
 USER hackmd
 
-ENTRYPOINT ["/hackmd/docker-entrypoint.sh"]
+CMD ["/usr/local/bin/docker-entrypoint.sh"]

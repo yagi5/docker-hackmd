@@ -8,5 +8,4 @@ fi
 sleep 3
 
 # run
-export NODE_ENV=production
 exec node app.js

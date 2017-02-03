@@ -1,14 +1,1 @@
-{
-    "production": {
-        "urladdport": true,
-        "email": true,
-        "db": {
-            "username": "hackmd",
-            "password": "hackmdpass",
-            "database": "hackmd",
-            "host": "hackmdpostgres",
-            "port": "5432",
-            "dialect": "postgres"
-        }
-    }
-}
+{"docker": {}}

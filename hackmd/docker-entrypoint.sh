@@ -1,11 +1,10 @@
 #!/bin/sh
 
-if [ -f .sequelizerc ]; then
-    node_modules/.bin/sequelize db:migrate
-fi
+# Ensure database has been migrated
+node_modules/.bin/sequelize db:migrate
 
-# wait for db up
+# Wait for database startup
 sleep 3
 
-# run
+# Run the app
 node app.js

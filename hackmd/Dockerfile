@@ -1,4 +1,4 @@
-FROM node:6-alpine
+FROM node:6.9-alpine
 
 # Build arguments to change source url, branch or tag
 ARG SourceUrl=https://github.com/hackmdio/hackmd.git

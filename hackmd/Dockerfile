@@ -34,7 +34,7 @@ EXPOSE 3000
 USER hackmd
 
 # Set some default config variables
-ENV NODE_ENV=docker
+ENV NODE_ENV=production
 
 # Add entrypoint and set command
 ADD docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh

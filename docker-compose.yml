@@ -13,3 +13,5 @@ services:
     environment:
       - HMD_DB_URL=postgres://hackmd:hackmdpass@postgres:5432/hackmd
       - HMD_IMAGE_UPLOAD_TYPE=filesystem
+    volumes:
+      - /hackmd/public/uploads

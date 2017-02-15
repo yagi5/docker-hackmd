@@ -8,4 +8,4 @@ fi
 sleep 3
 
 # run
-exec node app.js
+node app.js

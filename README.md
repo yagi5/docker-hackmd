@@ -77,6 +77,6 @@ The default setting would use pre-build docker image, follow below steps to cust
 3. Run `docker-compose build --no-cache` in the docker terminal to build your own image.
 4. Then `docker-compose up` to startup.
 
-*Use `--build-arg VERSION=0.4.6` to build latest release. By default the latest dev version is build.*
+*Use `--build-arg VERSION=0.5.0` to build latest release. By default the latest dev version is build.*
 
 **Happy HackMD :smile:**

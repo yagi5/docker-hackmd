@@ -4,7 +4,6 @@ FROM node:6.9-alpine
 ARG SourceUrl=https://github.com/hackmdio/hackmd.git
 ARG SourceVersion=0.5.0
 
-
 # Add configuraton files which seem to be required for a successful bild...
 ADD config.js config.json .sequelizerc /files/
 
@@ -13,6 +12,7 @@ RUN apk update && \
     apk add --no-cache build-base python git && \
     # Clone the source
     git clone --depth 1 --branch $SourceVersion $SourceUrl /hackmd && \
+    rm -rf /hackmd/.git && \
     # Symlink configuration files
     rm -f /hackmd/public/js/config.js && ln -s /files/config.js /hackmd/public/js/config.js && \
     rm -f /hackmd/config.json && ln -s /files/config.json /hackmd/config.json && \

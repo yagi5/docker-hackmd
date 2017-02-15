@@ -12,9 +12,4 @@ services:
       - "3000:3000"
     environment:
       - HMD_DB_URL=postgres://hackmd:hackmdpass@postgres:5432/hackmd
-      - HMD_DOMAIN=localhost
-      - HMD_ALLOW_ANONYMOUS=true
-      - HMD_ALLOW_FREEURL=true
-      - HMD_EMAIL=false
-      - HMD_ALLOW_EMAIL_REGISTER=false
       - HMD_IMAGE_UPLOAD_TYPE=filesystem

@@ -35,8 +35,6 @@ USER hackmd
 
 # Set some default config variables
 ENV NODE_ENV=docker
-ENV HMD_DB_URL=postgres://hackmd:hackmdpass@postgres:5432/hackmd
-ENV HMD_URL_ADDPORT=true
 
 # Add entrypoint and set command
 ADD docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh

@@ -10,6 +10,6 @@ hackmd:
     - POSTGRES_USER=hackmd
     - POSTGRES_PASSWORD=hackmdpass
   links:
-    - hackmdPostgres
+    - hackmdPostgres:hackmdPostgres
   ports:
     - "3000:3000"

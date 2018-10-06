@@ -1,7 +1,7 @@
 FROM node:8.11.4
 
 # Build arguments to change source url, branch or tag
-ARG HACKMD_REPOSITORY=https://github.com/hackmdio/hackmd.git
+ARG HACKMD_REPOSITORY=https://github.com/yagi5/codimd.git
 ARG VERSION=master
 
 # Set some default config variables
